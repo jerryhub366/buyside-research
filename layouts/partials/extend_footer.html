@@ -3,11 +3,8 @@
 {{/* ─── Disclaimer ────────────────────────────────────────────────────────── */}}
 {{ partial "disclaimer.html" . }}
 
-{{/* ─── Waline Comments / Reactions / Page Views ─────────────────────────────
-     After deploying Waline to Vercel:
-       Replace WALINE_SERVER_URL with your Waline deployment URL
-       e.g. https://your-waline.vercel.app
-     ─────────────────────────────────────────────────────────────────────── */}}
+{{/* ─── Waline (hidden — re-enable by uncommenting the block below) ──────────
+
 <div id="waline-pageview-count" style="margin:1rem 0;font-size:0.85rem;color:var(--secondary,#666);">
   阅读量：<span class="waline-pageview-count" data-path="{{ .RelPermalink }}">--</span>
 </div>
@@ -17,14 +14,7 @@
 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
 <script type="module">
   import { init, pageviewCount } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-
-  // Page view counter (runs on all pages without initializing full comment widget)
-  pageviewCount({
-    serverURL: 'https://waline-buyside.vercel.app',
-    path: window.location.pathname,
-  });
-
-  // Full Waline widget (comments + reactions)
+  pageviewCount({ serverURL: 'https://waline-buyside.vercel.app', path: window.location.pathname });
   init({
     el: '#waline-comment',
     serverURL: 'https://waline-buyside.vercel.app',
@@ -34,19 +24,11 @@
     comment: true,
     pageview: true,
     dark: 'html[data-theme="dark"]',
-    emoji: [
-      'https://unpkg.com/@waline/emojis@1.2.0/weibo',
-      'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
-    ],
-    locale: {
-      reactionTitle: '你的评价',
-      reaction0: '非常同意',
-      reaction1: '基本同意',
-      reaction2: '保持中立',
-      reaction3: '有待商榷',
-      reaction4: '强烈反对',
-    },
+    emoji: ['https://unpkg.com/@waline/emojis@1.2.0/weibo','https://unpkg.com/@waline/emojis@1.2.0/bilibili'],
+    locale: { reactionTitle:'你的评价', reaction0:'非常同意', reaction1:'基本同意', reaction2:'保持中立', reaction3:'有待商榷', reaction4:'强烈反对' },
   });
 </script>
+
+─────────────────────────────────────────────────────────────────────────── */}}
 
 {{ end }}
