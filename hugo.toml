@@ -5,7 +5,8 @@ theme = "PaperMod"
 defaultContentLanguage = "zh"
 enableRobotsTXT = true
 enableEmoji = true
-paginate = 10
+[pagination]
+  pagerSize = 10
 buildDrafts = false
 
 [params]
