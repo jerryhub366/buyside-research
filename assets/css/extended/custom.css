@@ -1,0 +1,44 @@
+/* ── Tighten overall page padding ───────────────────────────────────────── */
+.main {
+  padding: 20px 0;
+}
+
+/* ── Header: reduce height ───────────────────────────────────────────────── */
+.nav {
+  padding: 12px 0;
+}
+
+/* ── Home page: remove large top gap when no hero ────────────────────────── */
+.first-entry {
+  margin-top: 0;
+}
+
+/* ── Post list: tighten card spacing ─────────────────────────────────────── */
+.post-entry {
+  padding: 14px 0;
+  margin-bottom: 0;
+}
+
+/* ── Article page: reduce title area top padding ─────────────────────────── */
+.post-header {
+  margin-bottom: 16px;
+}
+
+.page-header {
+  margin-bottom: 16px;
+}
+
+/* ── Article content: tighten top gap ────────────────────────────────────── */
+.post-content {
+  margin-top: 8px;
+}
+
+/* ── TOC: reduce top spacing ─────────────────────────────────────────────── */
+.toc {
+  margin: 12px 0 20px;
+}
+
+/* ── Footer: reduce top padding ─────────────────────────────────────────── */
+.footer {
+  padding: 16px 0;
+}

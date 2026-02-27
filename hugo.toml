@@ -29,10 +29,6 @@ buildDrafts = false
   showtoc = true
   tocopen = false
 
-  [params.homeInfoParams]
-    Title = "买方研究"
-    Content = "深度行业研究 · 价值投资视角 · 每日更新"
-
   [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
