@@ -3,14 +3,11 @@ backend:
   repo: jerryhub366/buyside-research
   branch: main
   base_url: https://bs.ladebuid.com
-  auth_endpoint: /api/auth
+  auth_endpoint: api/auth
 
 # Where uploaded images will be stored
 media_folder: "static/images"
 public_folder: "/images"
-
-# Editorial workflow — enables draft/review/publish states
-publish_mode: editorial_workflow
 
 collections:
   - name: "reports"
