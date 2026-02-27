@@ -11,7 +11,6 @@ buildDrafts = false
 
 [params]
   description = "专业买方研究报告 · 深度行业分析"
-  author = "买方研究团队"
   defaultTheme = "auto"
   ShowReadingTime = false
   ShowShareButtons = false
