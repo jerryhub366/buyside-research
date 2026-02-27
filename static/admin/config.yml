@@ -4,8 +4,6 @@ backend:
   branch: main
   base_url: https://bs.ladebuid.com
   auth_endpoint: /api/auth
-  # ↑ After setting up GitHub OAuth App, Netlify Identity is NOT needed.
-  # Decap uses GitHub OAuth directly. See setup instructions in README.
 
 # Where uploaded images will be stored
 media_folder: "static/images"
