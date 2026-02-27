@@ -15,38 +15,6 @@ collections:
     folder: "content/reports"
     create: true
     fields:
-      - label: "标题"
-        name: "title"
-        widget: "string"
-
-      - label: "发布日期"
-        name: "date"
-        widget: "datetime"
-        format: "YYYY-MM-DD"
-        date_format: "YYYY-MM-DD"
-        time_format: false
-
-      - label: "公司名称"
-        name: "company"
-        widget: "string"
-
-      - label: "行业/板块"
-        name: "sector"
-        widget: "string"
-
-      - label: "标签"
-        name: "tags"
-        widget: "list"
-
-      - label: "摘要（SEO描述）"
-        name: "description"
-        widget: "text"
-
-      - label: "草稿"
-        name: "draft"
-        widget: "boolean"
-        default: false
-
       - label: "正文内容"
         name: "body"
         widget: "markdown"
