@@ -1,6 +1,6 @@
 baseURL = "https://bs.ladebuid.com"
 languageCode = "zh-CN"
-title = "买方研究"
+title = "研究笔记"
 theme = "PaperMod"
 defaultContentLanguage = "zh"
 enableRobotsTXT = true
