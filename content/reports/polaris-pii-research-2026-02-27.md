@@ -1,9 +1,9 @@
 ---
-title: "Polaris Inc.（NYSE: PII）买方研究报告"
+title: "Polaris Inc.（NYSE: PII）"
 date: 2026-02-27
 company: "Polaris Inc."
 sector: "动力运动器材/制造业"
-tags: ["美股", "PII", "周期股", "困境反转", "买方研究"]
+tags: ["美股", "PII", "周期股", "困境反转"]
 description: "系统梳理Polaris ORV头号玩家地位、护城河深度与FY2025重组后的估值修复逻辑。P/FCF约6x，经销商库存健康度创近年最佳，关税政策是核心尾部风险，适合分批建仓的困境反转机会。"
 draft: false
 ---

@@ -1,9 +1,9 @@
 ---
-title: "Duolingo (NASDAQ: DUOL) 买方研究报告"
+title: "Duolingo (NASDAQ: DUOL)"
 date: 2026-02-27
 company: "Duolingo"
 sector: "互联网教育/消费科技"
-tags: ["美股", "教育科技", "DUOL", "估值分析", "买方研究"]
+tags: ["美股", "教育科技", "DUOL", "估值分析"]
 description: "深度复盘Duolingo近期79%回撤成因，系统梳理其商业模式、护城河与竞争格局，并在Q4 2025财报后建立三情景估值框架。当前股价约$113，安全边际初现，但建议等待Q1 2026执行层面拐点信号。"
 draft: false
 ---

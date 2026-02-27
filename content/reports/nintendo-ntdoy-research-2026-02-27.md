@@ -1,9 +1,9 @@
 ---
-title: "任天堂（Nintendo）买方研究报告"
+title: "任天堂（Nintendo）"
 date: 2026-02-27
 company: "任天堂"
 sector: "游戏/消费电子"
-tags: ["美股", "NTDOY", "日股", "游戏", "IP", "买方研究"]
+tags: ["美股", "NTDOY", "日股", "游戏", "IP"]
 description: "深度解析任天堂Switch 2上市后的投资逻辑：IP护城河完整，净现金146亿美元，EV/E约20x。内存成本暴涨是核心压制因素，若DRAM价格H2回落+银河电影催化，当前价格具备较好风险收益比。"
 draft: false
 ---
