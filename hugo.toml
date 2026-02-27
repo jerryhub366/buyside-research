@@ -1,0 +1,66 @@
+baseURL = "https://bs.ladebuid.com"
+languageCode = "zh-CN"
+title = "买方研究"
+theme = "PaperMod"
+defaultContentLanguage = "zh"
+enableRobotsTXT = true
+enableEmoji = true
+paginate = 10
+buildDrafts = false
+
+[params]
+  description = "专业买方研究报告 · 深度行业分析"
+  author = "买方研究团队"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = true
+  hidemeta = false
+  hideSummary = false
+  showtoc = true
+  tocopen = false
+
+  [params.homeInfoParams]
+    Title = "买方研究"
+    Content = "深度行业研究 · 价值投资视角 · 每日更新"
+
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[params.assets]
+  favicon = "/favicon.ico"
+
+[taxonomies]
+  tag = "tags"
+  sector = "sectors"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+    lineNos = true
+    lineNumbersInTable = true
+
+[minify]
+  disableXML = false
+
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0.5

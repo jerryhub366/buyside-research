@@ -1,0 +1,63 @@
+backend:
+  name: github
+  repo: jerryhub366/buyside-research
+  branch: main
+  base_url: https://bs.ladebuid.com
+  auth_endpoint: /api/auth
+  # ↑ After setting up GitHub OAuth App, Netlify Identity is NOT needed.
+  # Decap uses GitHub OAuth directly. See setup instructions in README.
+
+# Where uploaded images will be stored
+media_folder: "static/images"
+public_folder: "/images"
+
+# Editorial workflow — enables draft/review/publish states
+publish_mode: editorial_workflow
+
+collections:
+  - name: "reports"
+    label: "研究报告"
+    label_singular: "报告"
+    folder: "content/reports"
+    create: true
+    slug: "{{slug}}"
+    preview_path: "reports/{{slug}}"
+    fields:
+      - label: "标题"
+        name: "title"
+        widget: "string"
+        hint: "格式建议：公司名（股票代码）+ 核心观点"
+
+      - label: "发布日期"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        default: ""
+
+      - label: "公司名称"
+        name: "company"
+        widget: "string"
+
+      - label: "行业/板块"
+        name: "sector"
+        widget: "string"
+        hint: "例：工业软件/人工智能"
+
+      - label: "标签"
+        name: "tags"
+        widget: "list"
+        hint: "逗号分隔，例：AI, 买入, 首次覆盖"
+
+      - label: "摘要（SEO描述）"
+        name: "description"
+        widget: "text"
+        hint: "150字以内，将用于搜索引擎摘要和 Open Graph 描述"
+
+      - label: "草稿"
+        name: "draft"
+        widget: "boolean"
+        default: false
+
+      - label: "正文内容"
+        name: "body"
+        widget: "markdown"

@@ -1,0 +1,24 @@
+{{/* ─── Umami Analytics ───────────────────────────────────────────────────────
+     After deploying Umami to Vercel:
+       1. Replace UMAMI_WEBSITE_ID with the website ID from Umami dashboard
+       2. Replace UMAMI_SCRIPT_URL with your Umami deployment URL + /script.js
+          e.g. https://your-umami.vercel.app/script.js
+     ─────────────────────────────────────────────────────────────────────── */}}
+<script
+  defer
+  src="UMAMI_SCRIPT_URL"
+  data-website-id="UMAMI_WEBSITE_ID"
+></script>
+
+{{/* ─── Open Graph / SEO ──────────────────────────────────────────────────── */}}
+{{ if .IsPage }}
+<meta property="og:type" content="article" />
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | truncate 160 }}{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />
+<meta property="og:locale" content="zh_CN" />
+{{ with .Date }}<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}" />{{ end }}
+{{ range .Params.tags }}<meta property="article:tag" content="{{ . }}" />{{ end }}
+{{ end }}
+<link rel="canonical" href="{{ .Permalink }}" />
